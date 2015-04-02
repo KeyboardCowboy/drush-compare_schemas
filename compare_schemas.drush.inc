@@ -145,7 +145,8 @@ function _compare_schemas_output_to_array($results) {
   $ret = array();
 
   foreach (explode(PHP_EOL, $results) as $row) {
-    if (empty(trim($row))) {
+    $row = trim($row);
+    if (empty($row)) {
       continue;
     }
     list($module, $status, $version) = explode(',', $row);
