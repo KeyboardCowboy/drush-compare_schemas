@@ -8,7 +8,7 @@ define('KC_MODULE_DISABLED', dt('disabled'));
  * @return mixed
  */
 function compare_schemas_drush_command() {
-  $items['compare-schema'] = array(
+  $items['compare-schemas'] = array(
     'description' => 'Compare the modules enabled and their versions between two sites.',
     'bootstrap' => DRUSH_BOOTSTRAP_DRUSH,
     'arguments' => array(
